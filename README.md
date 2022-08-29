@@ -5,14 +5,14 @@ mangement of records and books
 # Routes and Endpoints
 
 # /users
-POST: create new users
+POST: create new users ✔
 GET: Get list of all the users ✔
 
 
 ## /users/{id}
 GET: Get a user by Id{} ✔
-PUT: Update a user by Id{}
-DELETE: Delete a user by Id{} 
+PUT: Update a user by Id{} ✔
+DELETE: Delete a user by Id{} ✔
 (Check whether the user has returned the issued book.) 
 (Check if there is any fine to collect from user.)
 
@@ -23,12 +23,12 @@ GET: Get user subscription details
 3. Fine if any
 
 ## /books
-GET: Get the list of all available books
-POST: Add new books
+GET: Get the list of all available books ✔
+POST: Add new books ✔
 
 ## /books/{id}
-GET: Get a book by id{}
-POST: Update a book by id{}
+GET: Get a book by id{} ✔
+PUT: Update a book by id{}
 
 # /books/issued
 GET: Get a list of issued books
