@@ -16,11 +16,13 @@ DELETE: Delete a user by Id{} ✔
 (Check whether the user has returned the issued book.) 
 (Check if there is any fine to collect from user.)
 
-## /user/subscription-details1. 
-GET: Get user subscription details
+## /user/subscription-details
+GET: Get user subscription details ✔
 1. Date of subsription
 2. Valid till
 3. Fine if any
+
+Note: Date is in mm/dd/yyyy format
 
 ## /books
 GET: Get the list of all available books ✔
@@ -28,18 +30,19 @@ POST: Add new books ✔
 
 ## /books/{id}
 GET: Get a book by id{} ✔
-PUT: Update a book by id{}
+PUT: Update a book by id{}✔
 
-# /books/issued
-GET: Get a list of issued books
+# /books/issued/by-user
+GET: Get a list of issued books ✔
 
-# /books/issued/with-fine
+# /books/issued/with-fine 
 GET: Get all issued book with fine
 
-# Subsxription Types
+# Subscription Types
 Basic (3 months)
 Standard (6 months)
 Premium (12 months)
+
 
 If the subscription date of a user is 1/01/2022 and user has purchased a 
 standard package, user's subscription will expire on 1/07/2022

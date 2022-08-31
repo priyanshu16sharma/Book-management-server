@@ -88,7 +88,6 @@ router.post("/", (req,res)=>{
 router.put("/:id",(req,res)=>{
     const {id} = req.params;
     const { data } = req.body;
-    console.log();
     const user = users.find((element) => element.id===id);
 
     if(!user){
@@ -100,17 +99,18 @@ router.put("/:id",(req,res)=>{
     }
    
 //to overwrite content of each by the contents of data
-    const updatedUser = users.map((each)=>{
+    const updatedBook = users.map((each)=>{
         if(each.id===id){
             
             return {
                  
                 ...each,
-                ...data,
+                ...data
             };
         }
         return each;
     });
+    
     
     return res.status(201).json({
         success: true,
